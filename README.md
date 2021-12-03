@@ -1,2 +1,4 @@
 # ft
-ft is a task runner for JavaScript and TypeScript
+**Fast Task** is a task runner for Deno
+# Goal
+To make some experiments in build tools and try to improve perfomance and security in build process of [the codespace](https://github.com/hakden-io/codespace)
