@@ -1,4 +1,4 @@
 # ft
 **F**as**t** is a task runner for JS/TS Projects
 # Goal
-To make some experiments in build tools and try to improve perfomance and security in build process of [the codespace](https://github.com/hakden-io/codespace)
+Make experiments with build tools and Deno's APIs
