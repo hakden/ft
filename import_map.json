@@ -1,0 +1,8 @@
+{
+    "imports": {
+        "std/fmt/colors": "https://deno.land/std@0.132.0/fmt/colors.ts",
+        "std/encoding/toml": "https://deno.land/std@0.132.0/encoding/toml.ts",
+        "std/io": "https://deno.land/std@0.132.0/io/mod.ts",
+        "std/streams": "https://deno.land/std@0.132.0/streams/conversion.ts"
+    }
+}

@@ -1,0 +1,23 @@
+# Define custom commands using simple JS/TS scripts
+# NOTE: in next versions will be not only JS/TS scripts
+[commands]
+
+[commands.command1]
+source = "./scripts/tester.js"
+
+# Global tasks settings
+[tasks]
+
+[tasks.ft]
+# Behaviour is in what kind of way commands is running:
+# pipeline, async and inOrder
+# pipeline - is about passing output to the next command, ('|' in *nix)
+# async - commands run in parallel mode ('&' in *nix)
+# inOrder - one by one ((mntcloud) I may add separate modes: on success or on fail) (';' in *nix)
+# NOTE: behaviour parameter is not used if only one command is present in the commands array
+behaviour = "inOrder"
+# Environment variables
+env = { PYTHONUNBUFFERED = "1" }
+# Commands is an abstraction, command can be an exectuable from PATH environmental variable or
+# specified in above commands table using TS/JS scripts
+commands = [ "python3 test.py {{}}" ]
